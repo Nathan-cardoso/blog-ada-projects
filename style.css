@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary: #f3f3f3;
+    --color-emphasis: #00a8cc;
+    --color-shadow: #6464647c;
+    --primary_font:"Heebo", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: var(--primary_font)
+}
+
+body{
+    background-color: var(--color-primary);
+}
+
+/* Header style */
+
+header #navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 3.3rem;
+    max-width: 1200px;
+    align-items: center;
+    padding: 0 2em;
+    margin: 0 auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: var(--color-shadow) -2px 3px 6px;
+    background-color: white;
+
+}
+
+header #navbar .nav-brand{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black
+}
+
+header #navbar .nav-list{
+    list-style: none;
+    display: flex;
+    gap: 2.3rem;
+    text-align: center;
+    
+}
+
+header #navbar .nav-list .nav-item a{
+    text-decoration: none;
+    color:black;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+header #navbar .nav-list .nav-item a:hover{
+    transition: all 0.4s;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Main style */
+
+main{
+    margin-top: 4rem;
+}
+
+
+main #banner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: var(--color-shadow) -2px 2px 10px;
+}
+
+main #banner .banner-content{
+    max-width: 600px;
+}
+
+main #banner .banner-content .banner-content-tittle{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+main #banner .banner-content .banner-content-paragraph{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+main #banner .banner-content .banner-content-paragraph span{
+    color:var(--color-emphasis)
+}
+
+main #banner .banner-content .banner-content-button{
+    background-color: var(--color-emphasis);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 24px;
+    border: none;
+
+}
+
+
+main #banner figure img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+}
