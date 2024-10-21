@@ -248,16 +248,24 @@ main{
 /* Footer style*/
 
 footer{
-    height: 10rem;
     background-color: black;
 }
 
 footer .footer-content{
     display: flex;
     color:white;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 10px;
     
+}
+
+footer .footer-content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .footer-content em {
+    color: var(--color-emphasis);
 }
 
 footer .footer-content .footer-list-social{
@@ -269,10 +277,28 @@ footer .footer-content .footer-list-social{
 
 footer .footer-content .footer-list-social .item-social{
     display: flex;
-    gap: 1rem;
-    text-align: start;
+    gap: 0.5rem;
     flex-direction: row-reverse;
+    text-align: center;
+    justify-content: flex-end;
 }
+
+@media (max-width:835px){
+    footer .footer-content{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }   
+
+    footer .footer-content .footer-list-social{
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
 
 
 
