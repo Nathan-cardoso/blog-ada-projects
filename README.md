@@ -4,3 +4,12 @@ Esse é o primeiro projeto da trilha de estudos sobre o framework React. O proje
 
 ## Visualização da página
 
+### Desktop
+
+#### Home
+
+
+
+
+### Mobile
+
