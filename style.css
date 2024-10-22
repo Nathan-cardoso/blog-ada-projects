@@ -244,6 +244,70 @@ main{
     }
 }
 
+/* Section Contact */
+
+#contact{
+    height: 40rem;
+    margin-top: 10rem;
+}
+
+#contact h2{
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#contact .contact-content{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin:  auto;
+    padding: 0 2rem;
+}
+
+#contact .contact-content .contact-midia{
+    max-width: 300px;
+}
+
+#contact .contact-content .contact-midia img{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 20%;
+}
+
+
+#contact .contact-content .contact-midia h3{
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+@media (max-width: 900px){
+    #contact .contact-content .contact-midia img{
+        width: 70px;
+    }
+}
+
+@media (max-width: 670px){
+    #contact .contact-content .contact-midia img{
+        width: 50px;
+    }
+}
+
+@media (max-width: 530px){
+    #contact .contact-content{
+        flex-direction: column;
+    }
+
+    #contact .contact-content .contact-midia{
+        margin: 0 auto;
+    }
+
+
+}
+
+
 
 /* Footer style*/
 
